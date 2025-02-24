@@ -19,7 +19,8 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.7.0
+  sdk: '>=3.0.0 <4.0.0' # Ensure null safety
+  flutter: ">=3.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -30,14 +31,26 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  bloc: ^8.1.0
+  flutter_bloc: ^8.1.0
+  dio: ^5.0.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  freezed: ^2.0.0
+  get_it: ^7.2.0
+  equatable: ^2.0.0
+  intl: ^0.17.0
+  dartz: ^0.10.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+flutter_test:
+  sdk: flutter
+  build_runner: ^2.3.3
+  hive_generator: ^2.0.0
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
